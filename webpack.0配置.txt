@@ -1,0 +1,72 @@
+https://www.jianshu.com/p/6712e4e4b8fe
+
+
+yarn安装（包管理器跟npm 是一样）
+
+npm install yarn -g  //全局安装yarn
+
+mkdir yarn-project //新建一个文件夹
+
+yarn init//用yarn 初始化一个项目
+
+yarn add webpack// 用yarn 安装webpack（yarn global add webpack：全局安装  不推荐这样安装）
+
+yarn upgrade webpack //更新最新的包
+
+yarn cache ls //本地是否安装这个包
+
+yarn publish //把本地的项目发布到仓库里
+
+yarn remove //移除
+
+yarn cache clean //本地缓存进行清除
+
+yarn config set registry  registry.npm.taobao.org //安装淘宝镜像
+
+
+yarn info react //可以查看react的信息
+
+yarn why //帮你寻找依赖(yarn why uglify-js)
+
+yarn run //执行命令
+
+
+ 安装webpack 和 vue（是用vue要安装vue-loader）
+
+ 1.yarn init//用yarn 初始化一个项目
+
+ 2.cnpm install webpack vue vue-loader
+
+ 安装有一个提醒 就需要安装它的依赖包
+
+ 3.cnpm install css-loader vue-template-compiler
+
+ 项目安装好了就初始化文件夹（src->app.vue）
+
+ 4.npm i style-loader url-loader file-loader
+
+ 5.cnpm install webpack-dev-server
+ 
+ 6.cnpm install html-webpack-plugin(html插件)
+
+
+mode是webpack中独有的，有两种打包环境，一个是开发环境：development另外一个是生产环境：production
+打包的时候输入webpack --mode=development或者webpack --mode=production就不会出现警告提示了
+
+
+安装vue
+
+ 1.npm install -g vue-cli //全局安装 vue-cli
+
+ 2.vue init webpack my-project//创建一个基于“webpack”模板的新项目
+  
+ 3.npm install
+ 
+ 4.npm run dev
+
+
+https://blog.csdn.net/llf369477769/article/details/51917557 //如何使用Git上传项目代码到github
+
+
+
+ 
