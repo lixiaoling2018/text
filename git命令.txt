@@ -1,0 +1,5 @@
+git init //实例git
+git add . //把本地仓库添加到列表中
+git commit -m "first commit" //提交
+git remote add origin https://github.com/lixiaoling2018/text.git //进入要上传的仓库
+git push -u origin master  //push 到master
