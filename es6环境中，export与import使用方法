@@ -1,0 +1,47 @@
+1.新建profile.js，现在我们在profile.js里面加入以下代码
+
+var firstName = 'Michael';
+
+var lastName = 'Jackson';
+
+var year = 1958;
+
+const SuccMsgCode= 0;
+
+export {firstName, lastName, year, SuccMsgCode};
+
+2.在vue中引入js
+
+import {firstName, lastName, year, SuccMsgCode} from 'common/profile';
+
+console.log('firstName\t' + firstName);
+
+console.log('lastName\t' + lastName);
+
+console.log('year\t' + year);
+
+二,export 不仅能导出变量，还能导出函数和类
+class Person {
+  constructor(name){
+    this.name = name
+  }
+  showUserName(){
+    return this.name
+  }
+}
+//输出类Person
+export default {
+  Person
+}
+//输出函数mutilply
+export function mutilply(x,y) {
+  return x*y;
+}
+在vue 中引入
+  import util from './utils/profile'
+  import  mutilply from './utils/profile'
+  
+    let person = new util.Person('张三')
+    this.name = person.showUserName()
+    
+    console.log('multiply\t'+ mutilply)
